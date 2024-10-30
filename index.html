@@ -21,19 +21,19 @@
 </head>
 <body>
     <!-- Header -->
-     <header>
-        <div>
-            <img src="./images/Kim.ico" alt="logo">
-            <h1><a href="#">KimJuho</a></h1>
+     <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__img"src="./images/Kim.ico" alt="logo">
+            <h1 class="header__logo__title"><a href="#">KimJuho</a></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">홈으로</a></li>
-                <li><a href="#about">김주호</a></li>
-                <li><a href="#skills">기술</a></li>
-                <li><a href="#work">경험</a></li>
-                <li><a href="#license">자격증</a></li>
-                <li><a href="#contact">연락처</a></li>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#home" class="header__menu__item active">홈으로</a></li>
+                <li><a href="#about" class="header__menu__item">김주호</a></li>
+                <li><a href="#skills" class="header__menu__item">기술</a></li>
+                <li><a href="#work" class="header__menu__item">경험</a></li>
+                <li><a href="#license" class="header__menu__item">자격증</a></li>
+                <li><a href="#contact" class="header__menu__item">연락처</a></li>
             </ul>
         </nav>
      </header>
@@ -48,9 +48,9 @@
         </section>
         
         <!-- about -->
-        <section id="about">
-            <h2>김주호</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error vitae aliquid optio pariatur vel impedit qui laudantium. Placeat saepe suscipit, labore cumque assumenda aut sit. Molestias non maiores suscipit!</p>
+        <section id="about" class="section max-cotainer">
+            <h2 class="title">김주호</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error vitae aliquid optio pariatur vel impedit qui laudantium. Placeat saepe suscipit, labore cumque assumenda aut sit. Molestias non maiores suscipit!</p>
             <ul>
                 <li>
                     <i class="fa-brands fa-html5"></i>
@@ -80,9 +80,10 @@
         </section>
         
         <!-- skills -->
-        <section id="skills">
-            <h2>기술</h2>
-            <p>언어 및 도구</p>
+        <section id="skills" class="section">
+            <div class="max-container">
+            <h2 class="title">기술</h2>
+            <p class="description">언어 및 도구</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, alias animi ducimus rerum voluptatum aspernatur architecto culpa praesentium id expedita ea dolorem, voluptates consequuntur quae dignissimos beatae repellendus deserunt. Optio.</p>
             <div>
                 <section>
@@ -137,12 +138,14 @@
                         </ul>
                 </section>
             </div>
+            </div>    
         </section>
 
         <!-- work -->
-        <section id="work">
-            <h2>포트폴리오</h2>
-            <p>Projects</p>
+        <section id="work" class="section">
+            <div id="max-container">
+            <h2 class="title">포트폴리오</h2>
+            <p class="description">Projects</p>
             <ul>
                 <li><button>All <span>10</span></button></li>
                 <li><button>Front-end <span>3</span></button></li>
@@ -232,12 +235,13 @@
                     </a>
                 </li>
             </ul>
+            </div>     
         </section>
 
         <!-- license -->
-        <section id="license">
-            <h2>자격증</h2>
-            <p>국가 기술 자격증</p>
+        <section id="license" class="section max-container">
+            <h2 class="title">자격증</h2>
+            <p class="description">국가 기술 자격증</p>
             <ul>
                 <li>
                     <img src="./images/license1.jpg" alt="자격증">
@@ -256,14 +260,16 @@
          </aside>
      </main>
      <!-- Footer -->
-      <footer id="contact">
-        <h2>연락처</h2>
-        <p>bill415@naver.com</p>
+      <footer id="contact" class="section">
+        <div class="max-container">
+        <h2 class="title">연락처</h2>
+        <p class="description">bill415@naver.com</p>
         <ul>
             <li><a href="https://github.com/juhokim99" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
             <li><a href="https://github.com/juhokim99" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
         </ul>
         <p>ⓒKimJuho - All rights reseved</p>
+        </div>
       </footer>
 </body>
 </html>
