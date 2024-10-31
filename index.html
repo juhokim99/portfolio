@@ -51,29 +51,36 @@
         <section id="about" class="section max-cotainer">
             <h2 class="title">김주호</h2>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error vitae aliquid optio pariatur vel impedit qui laudantium. Placeat saepe suscipit, labore cumque assumenda aut sit. Molestias non maiores suscipit!</p>
-            <ul>
-                <li>
-                    <i class="fa-brands fa-html5"></i>
-                    <p>Front-end</p>
+            <ul class="majors">
+                <li class="major">
+                    <i class="fa-brands fa-html5 major__icon"></i>
+                    <p class="major__title">Front-end</p>
                     <p>HTML, CSS, JavaScript, Node.js, React</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>Mobile</p>
+                <li class="major">
+                    <i class="fa-solid fa-mobile major__icon"></i>
+                    <p class="major__title">Mobile</p>
                     <p>React-Native, Android, ios, Kotlin</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-server"></i>
-                    <p>Back-end</p>
+                <li class="major">
+                    <i class="fa-solid fa-server major__icon"></i>
+                    <p class="major__title">Back-end</p>
                     <p>Node.js, FastAPI, Java, GraphQL</p>
                 </li>
             </ul>
-            <ul>
-                <li>
+            <ul class="jobs">
+                <li class="job">
                     <img src="./images/logo.png" alt="강원대">
                     <div>
-                        <p>강원대학교</p>
-                        <p>2021.03.02 ~ 2023.03.02 (휴학중)</p>
+                        <p class="job__name">강원대학교</p>
+                        <p class="job__period">2021.03.02 ~ 2023.03.02 (휴학중)</p>
+                    </div>
+                </li>
+                <li class="job">
+                    <img src="./images/logo.png" alt="강원대">
+                    <div>
+                        <p class="job__name">강원대학교</p>
+                        <p class="job__period">2021.03.02 ~ 2023.03.02 (휴학중)</p>
                     </div>
                 </li>
             </ul>
@@ -82,56 +89,67 @@
         <!-- skills -->
         <section id="skills" class="section">
             <div class="max-container">
-            <h2 class="title">기술</h2>
-            <p class="description">언어 및 도구</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, alias animi ducimus rerum voluptatum aspernatur architecto culpa praesentium id expedita ea dolorem, voluptates consequuntur quae dignissimos beatae repellendus deserunt. Optio.</p>
-            <div>
-                <section>
-                    <h3>언어</h3>
+                <h2 class="title">기술</h2>
+                <p class="description">언어 및 도구</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, alias animi ducimus rerum voluptatum aspernatur architecto culpa praesentium id expedita ea dolorem, voluptates consequuntur quae dignissimos beatae repellendus deserunt. Optio.</p>
+                <div class="skills">
+                <section class="skills__coding">
+                    <h3 class="skills__title">언어</h3>
                         <ul>
-                            <li>
-                                <div><span>HTML</span><span>98%</span></div>
-                                <div><div style="width: 98%;"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>HTML</span>
+                                    <span>98%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value"style="width: 98%;"></div></div>
                             </li>
-                            <li>
-                                <div><span>HTML</span><span>98%</span></div>
-                                <div><div style="width: 98%;"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>CSS</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value"style="width: 88%;"></div></div>
                             </li>
-                            <li>
-                                <div><span>HTML</span><span>98%</span></div>
-                                <div><div style="width: 98%;"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>JavaScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value"style="width: 90%;"></div></div>
                             </li>
-                            <li>
-                                <div><span>CSS</span><span>90%</span></div>
-                                <div><div style="width: 90%;"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>React</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value"style="width: 80%;"></div></div>
                             </li>
-                            <li>
-                                <div><span>JavaScript</span><span>90%</span></div>
-                                <div><div style="width: 90%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>React</span><span>80%</span></div>
-                                <div><div style="width: 80%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>Node.js</span><span>75%</span></div>
-                                <div><div style="width: 75%;"></div></div>
-                            </li>
-                            <li></li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>Node.js</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value"style="width: 75%;"></div></div>
+                            </li>  
                         </ul>
                 </section>
-                <section>
-                    <h3> </h3>
+                <section class="skills__tools">
+                    <h3 class="skills__title">도구</h3>
                         <ul>
                             <li>Visual Studio Code</li>
                             <li>Pycharm</li>
                             <li>Jupyter Notebook</li>
-                            <li>A</li>
-                            <li>B</li>
+                            <li>Colab</li>
+                            <li>Xcode</li>
                         </ul>
                 </section>
-                <section>
-                    <h3> 기타</h3>
+                <section class="skills__etc">
+                    <h3 class="skills__title"> 기타</h3>
                         <ul>
                             <li>Git</li>
                             <li>Math</li>
