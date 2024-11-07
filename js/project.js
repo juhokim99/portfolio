@@ -1,6 +1,6 @@
 const categories = document.querySelector('.categories')
 const projectsContainer = document.querySelector('.projects')
-const projects = document.querySelectorAll('.projects')
+const projects = document.querySelectorAll('.project')
 
 categories.addEventListener('click', (e)=>{
     const filter = e.target.dataset.category
@@ -21,9 +21,9 @@ function activeSelection(target){
 function filterProjects(filter){
     projects.forEach((project)=>{
         if(filter === 'all' || filter === project.dataset.type){
-            project.computedStyleMap.display = 'block'
+            project.style.display = 'block'
         }else{
-            project.computedStyleMap.display = 'none'
+            project.style.display = 'none'
         }
     })
     projectsContainer.classList.add('anim-out')
